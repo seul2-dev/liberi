@@ -1,4 +1,4 @@
-package com.seul.liberi.main;
+package com.roozLog.liberi.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

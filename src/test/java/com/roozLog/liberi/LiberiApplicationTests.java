@@ -1,4 +1,4 @@
-package com.seul.liberi;
+package com.roozLog.liberi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

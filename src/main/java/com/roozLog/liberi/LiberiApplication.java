@@ -1,4 +1,4 @@
-package com.seul.liberi;
+package com.roozLog.liberi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
