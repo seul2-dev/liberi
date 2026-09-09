@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="UTF-8">
+  <title>Liberi</title>
+
+  <!-- jQuery -->
+  <script th:src="@{/lib/jquery-3.7.1.min.js}"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" th:href="@{/css/common.css}">
+  <link rel="stylesheet" th:href="@{/css/layout.css}">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+
+  <!-- JS -->
+  <script th:src="@{/js/common.js}"></script>
+</head>
+
+<body>
+<!-- 1. 공통 헤더 -->
+<!-- 상단 고정 헤더 -->
+<header class="header">
+  <div class="header-container">
+    <!-- 로고 이미지 영역 -->
+    <div class="logo-area">
+      <a href="#">
+        <img th:src="@{/img/liberiLogo.png}" alt="Liberi_Logo" class="header-logo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- 2. 각 페이지의 본문이 들어올 위치 -->
+<main class="subContent">
+    <div class="contents center" id="contents_body" layout:fragment="content"></div>
+</main>
+
+<!-- 3. 공통 푸터 -->
+<footer class="footer">
+  <p>&copy; 2026 roozLog. All rights reserved.</p>
+</footer>
+
+<!-- 공통 알림 모달 -->
+<div id="common_alert" class="alert" style="display: none;">
+  <div class="alert_cont">
+    <p id="alert_msg">알림 내용이 들어갑니다.</p>
+    <button type="button" class="btn_basic" onclick="closeAlert()">확인</button>
+  </div>
+</div>
+
+<!-- 개별 페이지 스크립트 삽입 -->
+<th:block layout:fragment="script"></th:block>
+
+</body>
+</html>

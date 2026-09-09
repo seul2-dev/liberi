@@ -1,0 +1,66 @@
+/* ==========================================
+   1. 로그인 화면
+   ========================================== */
+/* 메인 화면 정중앙 배치 */
+.wrapper {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    min-height: calc(100vh - 150px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e2e8f0); /* 선명한 외곽선 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Login 타이틀 */
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #b9c97f;
+    margin-bottom: 24px;
+}
+
+/* 1. 폼 내부 요소 세로(위아래) 배치 및 간격 설정 */
+.login-form {
+    display: flex;
+    flex-direction: column; /* 위에서 아래로 세로 배치 */
+    gap: 12px;             /* 입력창 사이의 위아래 간격 */
+}
+
+/* 2. 아이디, 비밀번호 입력창 일괄 스타일링 */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    height: 48px;                 /* 높이 48px 고정 */
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;    /* 차분한 테두리 */
+    background-color: #f5f5f5;    /* 연한 회색 배경 */
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/* 3. 플레이스홀더 (좀 더 진한 회색) */
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder {
+    color: #767676;               /* 명확하게 보이는 진한 회색 */
+}
+
+/* 4. 입력창 마우스 포커스 시 스타일 */
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    background-color: #ffffff;    /* 입력 중일 때는 흰색 배경 */
+    border-color: var(--primary-color); /* 포인트 컬러 테두리 */
+}

@@ -1,0 +1,88 @@
+/* ==========================================
+   1. 헤더 스타일 (Header)
+   ========================================== */
+.header {
+    width: 100%;
+    height: 64px;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.header-container {
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .logo a {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+}
+
+.header-container .nav-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.header-container .nav-menu a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-sub);
+    transition: color 0.2s ease;
+}
+
+.header-container .nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+/* 로고 이미지 크기 세팅 */
+.header-logo {
+    height: 100px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.logo-area {
+    margin: 0px 0px 0px -27px;
+}
+
+/* ==========================================
+   2. 푸터 스타일 (Footer)
+   ========================================== */
+.footer {
+    width: 100%;
+    background: #2b2d33;
+    margin-top: auto; /* 푸터를 항상 화면 하단에 고정 */
+    border-top: 1px solid var(--border-color);
+    padding: 24px 20px;
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-sub);
+}
+
+/* ==========================================
+   3. 본문 스타일 (Footer)
+   ========================================== */
+.subContent {
+    width: 100%;
+    padding: 0 20px;
+    background-color: var(--bg-color);
+}
