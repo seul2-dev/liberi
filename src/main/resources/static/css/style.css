@@ -64,3 +64,129 @@
     background-color: #ffffff;    /* 입력 중일 때는 흰색 배경 */
     border-color: var(--primary-color); /* 포인트 컬러 테두리 */
 }
+
+/* 5. 비밀번호 찾기, 회원가입 스타일 */
+.login_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 100%;
+}
+
+/* 각각 영역을 절반씩 차지하게 설정 */
+.login_link .btn_txt {
+    flex: 1;
+}
+
+#btn_srh_pw {
+    text-align: right;
+    padding-right: 8px;
+}
+
+#btn_join {
+    text-align: left;
+    padding-left: 8px;
+}
+
+/* ==========================================
+   2. 회원가입 화면
+   ========================================== */
+.join_box {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e2e8f0); /* 선명한 외곽선 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.info_box {
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color, #e2e8f0);
+}
+
+.join_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b9c97f;
+    margin-bottom: 24px;
+}
+
+/* 전체 줄을 한 줄로 정렬 */
+.form-group {
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 12px; /* 줄 간격 */
+}
+
+/* 라벨 고정 너비 설정 (줄맞춤 핵심!) */
+.form-group label {
+    width: 100px;        /* 필요에 따라 80px~120px 조정 */
+    flex-shrink: 0;      /* 너비 줄어듦 방지 */
+    font-weight: bold;
+}
+
+/* [Style 2] 일반 입력창: 라벨 제외 남은 영역 전체 차지 */
+.form-group > input {
+    flex: 1;
+}
+
+/* [Style 1] 입력창 + 버튼 감싸는 박스 */
+.input_btn_box {
+    display: flex;
+    flex: 1;             /* 라벨 제외 남은 영역 전체 차지 */
+    gap: 8px;            /* 입력창과 버튼 사이 간격 */
+}
+
+.input_btn_box input {
+    flex: 1;             /* 버튼 제외 남은 영역 차지 */
+}
+
+.input_btn_box .btn_sub {
+    white-space: nowrap; /* 버튼 글자 줄바꿈 방지 */
+}
+
+/* 이메일 영역 컨테이너 */
+.email_box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 6px;
+}
+
+/* 이메일 아이디, 도메인 입력창 */
+.email_box input {
+    flex: 1;
+    width: 0;
+}
+
+/* @ 기호 스타일 */
+.email_box .at {
+    color: #64748b;
+    font-weight: bold;
+}
+
+/* 셀렉트 박스 다른 input과 스타일 통일 */
+.email_box select {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #334155;
+    outline: none;
+    cursor: pointer;
+}
+
+.email_box select:focus {
+    border-color: #e2e8f0;
+}
+
+.addr_box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;              /* 남은 영역 전체 차지 */
+    gap: 8px;             /* 윗줄(우편번호)과 아랫줄(주소) 사이 간격 */
+}

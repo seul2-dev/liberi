@@ -14,11 +14,18 @@ public class MainController {
     }
 
     /*
-    * 로그인 화면으로 이동
+    * 로그인
     * */
     @GetMapping("/login")
     public String loginPage() {
-        // templates/login.html 반환
-        return "login/login";
+        return "user/login";
+    }
+
+    /*
+     * 회원가입
+     * */
+    @GetMapping("/join")
+    public String joinPage() {
+        return "user/join";
     }
 }
