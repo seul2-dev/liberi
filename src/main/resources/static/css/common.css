@@ -170,3 +170,9 @@ button, input {
         transform: scale(1);
     }
 }
+
+.req {
+    color: #ef4444;
+    margin-left: 3px;
+    font-weight: bold;
+}
